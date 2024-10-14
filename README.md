@@ -2,17 +2,6 @@
 
 Welcome to the repository for my blog post! This repository contains the content, code examples, and resources discussed in the blog post.
 
-## Table of Contents
-
-1. [Introduction](#introduction)
-2. [Project Setup](#project-setup)
-3. [Code Examples](#code-examples)
-4. [Usage](#usage)
-5. [Contributing](#contributing)
-6. [License](#license)
-
----
-
 ## Introduction
 
 This repository is a companion to my blog post on **Django**, a powerful web framework for building scalable and maintainable web applications. The blog post covers key concepts such as project setup, views, models, and templates, along with practical code examples.
