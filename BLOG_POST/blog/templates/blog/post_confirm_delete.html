@@ -1,0 +1,43 @@
+{% extends 'blog/base.html' %}
+{% block content %}
+    <style>
+
+        .content-section {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 10px;
+        }
+        .form-group h1, .form-group h2 {
+            margin-bottom: 15px;
+        }
+        button, a {
+            padding: 8px 12px;
+            margin-right: 10px;
+            text-decoration: none;
+        }
+        button {
+            background-color: #ff4d4d;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        a {
+            background-color: #d3d3d3;
+            color: black;
+        }
+
+    </style>
+        <div class="content-section">
+            <form method="POST">
+                {% csrf_token %}
+                <div class="form-group">
+                    <h1>Delete Post</h1>
+                    <h2>Are you sure you want to delete the post "{{ object.title }}"</h2>
+                </div>
+                <div class="form-group">
+                    <button type="submit">Yes, Delete</button>
+                    <a href="{% url 'post-detail' object.id %}">Cancel</a>
+                </div>
+            </form>
+        </div>
+{% endblock content %}

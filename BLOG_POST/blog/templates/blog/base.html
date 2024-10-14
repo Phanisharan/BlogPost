@@ -1,0 +1,50 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-sacle=1.0, shrink-to-fit=no">
+
+  <link rel="stylesheet" href="{% static 'blog/main.css' %}">
+</head>
+<body>
+
+  <!--Navigation Bar-->
+  <nav>
+    <ul>
+      <li>  <b href="{% url 'blog-home' %}">MACHENTO BLOGS</b>  </li>
+
+      <li>  <a href="{% url 'blog-home' %}">HOME</a>  </li>
+      <li>  <a href="{% url 'blog-about' %}">ABOUT</a>  </li>
+      <li>  <a href="{% url 'blog-contact' %}">CONTACT US</a>  </li>
+
+      {% if user.is_authenticated %}
+
+        <li style="margin-left: auto;"><a href = "{% url 'post-create' %}">NEW POST</a> </li>
+        <li><a href="{% url 'profile' %}">PROFILE</a>  </li>
+        <li><a href="{% url 'login' %}">LOGOUT</a></li>
+
+      {% else %}
+
+        <li style="margin-left: auto;">  <a href="{% url 'login' %}">LOGIN</a>  </li>
+        <li>  <a href="{% url 'register' %}">REGISTER</a></li>
+
+      {% endif %}
+    </ul>
+  </nav>
+
+  <!--Main Content-->
+  <div class ="content">
+    {% if messages %}
+      {% for message in messages %}
+        <div class="alert alert-{{ message.tags }}">
+          {{ message }}
+        </div>
+      {% endfor %}
+    {% endif %}
+    {% block content %}
+    {% endblock %}
+  </div>
+
+</body>
+</html>

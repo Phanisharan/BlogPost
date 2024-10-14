@@ -1,0 +1,102 @@
+[
+  {
+    "title": "Introduction to Django",
+    "content": "Django is a high-level Python web framework that enables rapid development of secure and maintainable websites. It follows the model-template-views (MTV) architectural pattern and encourages clean design and reusable code.",
+    "user_id": 1
+  },
+  {
+    "title": "Getting Started with Python",
+    "content": "Python is an interpreted, high-level, and general-purpose programming language. It's great for web development, automation, data analysis, and much more. Let's explore how you can get started with Python in this blog post.",
+    "user_id": 2
+  },
+  {
+    "title": "Advanced Django Tips and Tricks",
+    "content": "In this post, we'll explore some advanced tips and tricks for working with Django. From optimizing querysets to using custom template tags, there's a lot you can do to make your Django project more efficient.",
+    "user_id": 3
+  },
+  {
+    "title": "Understanding REST APIs",
+    "content": "REST APIs are crucial in modern web applications for enabling communication between different systems. This post will cover the basics of REST APIs, how they work, and how you can create them using Django REST Framework.",
+    "user_id": 4
+  },
+  {
+    "title": "Database Management with Django",
+    "content": "Learn how to manage databases using Django's ORM. This post will guide you through setting up databases, creating models, performing queries, and managing migrations in your Django application.",
+    "user_id": 1
+  },
+  {
+    "title": "Building a Blog with Django",
+    "content": "This tutorial walks you through building a simple blog using Django. We’ll cover setting up the project, creating the models, templates, and views, and handling user authentication.",
+    "user_id": 6
+  },
+  {
+    "title": "Deploying Django on Heroku",
+    "content": "Deploying a Django project on Heroku is a great way to get your web app live quickly. This post provides a step-by-step guide on how to deploy a Django project on Heroku and manage your app using the Heroku CLI.",
+    "user_id": 2
+  },
+  {
+    "title": "Introduction to Django Rest Framework",
+    "content": "Django Rest Framework (DRF) is a powerful toolkit for building web APIs. This post introduces the basics of DRF, covering how to create simple APIs and integrate them into your Django project.",
+    "user_id": 6
+  },
+  {
+    "title": "Using Signals in Django",
+    "content": "Django signals allow decoupled applications to get notified when certain actions occur elsewhere in the system. This post explains how to use signals in Django to handle events like user creation or updates.",
+    "user_id": 9
+  },
+  {
+    "title": "Handling User Authentication in Django",
+    "content": "In this post, we'll cover Django's built-in user authentication system. You'll learn how to handle login, logout, and user registration, and how to protect views that require authentication.",
+    "user_id": 7
+  },
+  {
+    "title": "Building REST APIs with Flask",
+    "content": "Flask is a lightweight web framework for Python. This post covers how to create REST APIs using Flask, handle different HTTP methods, and connect the APIs to a database.",
+    "user_id": 11
+  },
+  {
+    "title": "JavaScript for Beginners",
+    "content": "JavaScript is one of the core technologies of web development. In this post, we'll introduce the basics of JavaScript, including variables, functions, and event handling, to help you get started.",
+    "user_id": 8
+  },
+  {
+    "title": "Asynchronous Programming in Python",
+    "content": "Asynchronous programming allows tasks to run concurrently, improving performance in I/O-bound tasks. This post explores async and await in Python, along with common use cases such as web scraping and API calls.",
+    "user_id": 6
+  },
+  {
+    "title": "Optimizing Django Queries",
+    "content": "Optimizing database queries is crucial for performance in Django applications. This post explores techniques like select_related and prefetch_related to improve query efficiency.",
+    "user_id": 1
+  },
+  {
+    "title": "Automating Tasks with Python",
+    "content": "Python is great for automating repetitive tasks. This post demonstrates how you can use Python scripts to automate things like file management, sending emails, and web scraping.",
+    "user_id": 2
+  },
+  {
+    "title": "Building Single Page Applications with Vue.js",
+    "content": "Vue.js is a progressive JavaScript framework for building user interfaces. In this post, you'll learn how to create a simple single-page application (SPA) with Vue.js and connect it to a backend API.",
+    "user_id": 5
+  },
+  {
+    "title": "Testing in Django with Pytest",
+    "content": "Testing is essential to ensure that your application behaves as expected. This post covers how to write unit tests for Django applications using the Pytest framework.",
+    "user_id": 5
+  },
+  {
+    "title": "Introduction to Celery in Django",
+    "content": "Celery is an asynchronous task queue that can be used to execute tasks in the background. This post covers how to integrate Celery into your Django application and use it to handle long-running tasks.",
+    "user_id": 2
+  },
+  {
+    "title": "GraphQL vs REST API",
+    "content": "GraphQL and REST are two different approaches to building APIs. In this post, we’ll compare them, discussing their strengths, weaknesses, and the best use cases for each.",
+    "user_id": 2
+  },
+  {
+    "title": "Continuous Integration with Django",
+    "content": "Continuous integration (CI) is a software development practice where code changes are automatically tested and merged. In this post, you'll learn how to set up CI for a Django project using GitHub Actions.",
+    "user_id": 1
+  }
+]

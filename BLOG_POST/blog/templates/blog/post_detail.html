@@ -1,0 +1,119 @@
+{% extends "blog/base.html" %}
+{% block content %}
+
+  <style>
+
+        .blog-post{
+          background-color: rgba(240, 248, 255, 0.705);
+          border-radius: 10px;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+          overflow: hidden;
+          margin: 50px auto;
+          max-width: 800px;
+        }
+
+
+        .post-header{
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 30px;
+          background-color: rgb(240, 245, 245);
+          border-bottom: 1px solid #f5f2f2;
+        }
+
+
+        .user-info {
+          display: flex;
+          align-items: center;
+        }
+
+
+        .user-image{
+          border-radius: 50%;
+          width: 50px;
+          height: 50px;
+          object-fit: cover;
+          margin-right: 10px;
+        }
+
+
+        .user-name{
+          font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+          font-weight: bold;
+          color:black;
+          text-transform: capitalize;
+        }
+
+
+        .post-date p{
+          font-size: 0.9em;
+          color: #666;
+          margin: 0;
+        }
+
+
+        .post-content{
+          padding: 20px;
+        }
+
+
+        .post-content h2 a{
+          font-family: 'Times New Roman', Times, serif;
+          margin-top: 0;
+          color: #010101d7;
+          text-decoration: none; 
+        }
+
+
+        .post-content p{
+          color: #555;
+          line-height: 1.6;
+        }
+
+
+        .post-modify a {
+          display: inline-block;
+          margin: 10px;
+          padding: 5px 15px;
+          text-decoration: none;
+          background-color: #007bff;
+          color: white; 
+          border-radius: 5px; 
+          transition: background-color 0.3s ease;
+        }
+
+
+        .post-modify a:hover {
+          background-color: #0056b3;
+        }
+
+
+
+  </style>
+
+    <div class = "blog-post">
+
+      <div class = "post-header">
+        <div class = "user-info">
+          <img src = "{{ object.author.profile.image.url }}" alt = "User Image" class = "user-image">
+          <span class = "user-name"><b>{{ object.author }}</b></span>
+        </div>
+        <div class = "post-date">
+          <p>{{ object.date_posted|date:"F d, Y" }}</p>
+        </div>
+      </div>
+      <div class = "post-content">
+        <h2>{{ object.title }}</h2>
+        <p>{{ object.content }}</p>
+      </div>
+      {% if object.author == user %}
+        <div class = "post-modify">
+          <a href = "{% url 'post-update' object.id %}"> Update </a>
+          <a href = "{% url 'post-delete' object.id %}"> Delete </a>
+        </div>
+      {% endif %}
+
+    </div>
+
+{% endblock content %}
